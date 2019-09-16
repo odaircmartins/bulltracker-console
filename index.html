@@ -37,7 +37,18 @@
         <div class="container">
             <div id="mapid"></div>
             <br>
-            <div id="alerta" class="notification is-danger" style="display: none;"></div>
+
+            <div class="columns">
+                <div class="column is-one-fifth">
+                    <a id="boisNaCerca" class="button is-info is-outlined">Bois na área demarcada: 0</a>
+                </div>
+                <div class="column is-one-fifth">
+                    <div id="gerarBois"></div>
+                </div>
+                <div class="column">
+                    <a id="alerta" class="button is-danger is-fullwidth" style="display: none;"></a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -46,6 +57,8 @@
             <p>Criado por <strong>Inovetech</strong> Automação</p>
         </div>
     </footer>
+
+    <audio id="siren" src="sounds/siren.wav"></audio>
 </body>
 
 <script src="js/scripts.js"></script>
